@@ -1,0 +1,44 @@
+.v3-constraint-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 23px 0 27px; border-block: 1px solid #ccd9d9; background: #f2f6f3; }
+.v3-constraint-item { position: relative; display: grid; grid-template-columns: 1fr; align-content: center; gap: 2px; min-height: 105px; padding: 15px 20px; }
+.v3-constraint-divider { position: absolute; top: 18px; right: 0; bottom: 18px; width: 1px; background: #d4dfdc; }
+.v3-constraint-label { color: #73858c; font-size: 13px; font-weight: 800; letter-spacing: .12em; }
+.v3-constraint-state { display: flex; align-items: center; gap: 7px; color: #253f50; font-size: 1.2204rem; font-weight: 740; }
+.v3-constraint-state i { color: #167662; font-size: 13px; font-style: normal; }
+.v3-constraint-item.is-unavailable .v3-constraint-state i { color: #ad5e32; font-size: 17.28px; }
+.v3-constraint-note { color: #73838d; font-size: 0.8125rem; }
+.v3-task-semantics { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); align-items: center; gap: 11px 18px; margin: 20px 0 24px; padding: 16px 18px; border: 1px solid #dce6e2; border-radius: 10px; background: linear-gradient(130deg,#f7faf8,#fff); }
+.v3-task-semantics-heading > span { color: #6f8c86; font-size: 13px; font-weight: 820; letter-spacing: .1em; }
+.v3-task-semantics-heading h3 { margin: 4px 0; color: #2c5059; font-size: 1.0584rem; line-height: 1.35; }
+.v3-task-semantics-heading p { margin: 0; color: #62787d; font-size: 0.8125rem; line-height: 1.5; }
+.v3-task-semantics-map { display: grid; grid-template-columns: minmax(0,1fr) minmax(94px,.7fr) minmax(0,1fr); align-items: center; gap: 8px; }
+.v3-task-semantics-map article { display: grid; gap: 3px; min-width: 0; padding: 9px 10px; border: 1px solid #e0e8e5; border-radius: 7px; background: white; }
+.v3-task-semantics-map article > span { color: #748783; font-size: 13px; font-weight: 820; letter-spacing: .08em; }
+.v3-task-semantics-map article > strong { color: #345b60; font-size: 0.8125rem; }
+.v3-task-semantics-map article > small { color: #718187; font-size: 0.8125rem; }
+.v3-task-semantics-map article > small a { color: #2e7669; }
+.v3-task-semantics-shared { display: grid; justify-items: center; gap: 2px; padding: 8px 4px; border-inline: 1px dashed #a9c9bb; color: #2c7567; text-align: center; }
+.v3-task-semantics-shared strong { font-size: 0.8125rem; }
+.v3-task-semantics-shared small { color: #738985; font-size: 0.8125rem; }
+.v3-task-semantics-boundary { grid-column: 1 / -1; margin: 0; padding-top: 9px; border-top: 1px solid #e6ece9; color: #697c80; font-size: 0.8125rem; line-height: 1.5; }
+.v3-baseline-block { margin-top: 24px; }
+.v3-matrix-wrap { width: 100%; overflow: hidden; border-top: 1px solid #d7e0e2; border-bottom: 1px solid #d7e0e2; }
+.v3-baseline-matrix { width: 100%; border-collapse: collapse; table-layout: fixed; color: #516777; font-size: 0.8856rem; }
+.v3-baseline-matrix th, .v3-baseline-matrix td { padding: 9px 12px; border-bottom: 1px solid #e5eaeb; text-align: left; vertical-align: middle; }
+.v3-baseline-matrix thead th { color: #73848f; background: #f2f5f3; font-size: 0.8125rem; font-weight: 790; }
+.v3-baseline-matrix thead th:first-child { width: 40%; }
+.v3-baseline-matrix tbody th { color: #294356; font-size: 0.9072rem; font-weight: 720; }
+.v3-baseline-matrix tbody th small { display: block; margin-top: 2px; color: #7c8b95; font-size: 0.8125rem; font-weight: 450; line-height: 1.35; }
+.v3-baseline-matrix tbody td:not(:first-child) { color: #356e64; font-weight: 730; text-align: center; }
+.v3-baseline-matrix tbody td.is-no { color: #a85f35; }
+.v3-baseline-matrix tbody tr:last-child th, .v3-baseline-matrix tbody tr:last-child td { border-bottom: 0; }
+.v3-baseline-matrix tbody tr.is-lwf { background: #edf6f2; }
+.v3-baseline-matrix tbody tr.is-lwf th { color: #145e59; }
+.v3-one-line-method { display: flex; align-items: baseline; gap: 11px; margin: 17px 0 0; padding: 12px 15px; border-left: 3px solid #26827b; background: #eaf3ef; color: #334e5b; font-size: 0.972rem; }
+.v3-one-line-method span { flex: 0 0 auto; color: #176760; font-size: 0.8125rem; font-weight: 820; }
+
+@media (max-width: 680px) {
+  .v3-task-semantics { grid-template-columns: minmax(0,1fr); gap: 10px; padding: 13px 12px; }
+  .v3-task-semantics-map { grid-template-columns: minmax(0,1fr); }
+  .v3-task-semantics-shared { border-inline: 0; border-block: 1px dashed #a9c9bb; }
+  .v3-task-semantics-boundary { grid-column: 1; }
+}

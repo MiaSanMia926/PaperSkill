@@ -9,7 +9,8 @@
   "participants": [
     {
       "name": "bettyyang1223",
-      "github": "bettyyang1223"
+      "github": "bettyyang1223",
+      "jianlunId": "2cffa20a0d5660afe1702125c6f99b64"
     }
   ],
   "topics": [],
@@ -17,5 +18,11 @@
   "status": "published",
   "entry": "index.html",
   "version": "bettyyang12230911",
-  "versionDate": "2026-09-11"
+  "versionDate": "2026-09-11",
+  "ancestors": [
+    {
+      "github": "happycodingday",
+      "version": "liuyuxuan0814"
+    }
+  ]
 }

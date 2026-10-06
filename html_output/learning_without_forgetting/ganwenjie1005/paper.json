@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "paperName": "learning_without_forgetting",
+  "title": "Learning without Forgetting",
+  "authors": [],
+  "year": null,
+  "venue": "",
+  "paperUrl": "https://arxiv.org/abs/1606.09282",
+  "participants": [
+    {
+      "name": "ganwenjie",
+      "github": "LIZZYGREAT"
+    }
+  ],
+  "topics": [],
+  "skillVersion": "1.4.0",
+  "status": "review",
+  "entry": "index.html",
+  "version": "ganwenjie1005",
+  "versionDate": "2026-10-05"
+}

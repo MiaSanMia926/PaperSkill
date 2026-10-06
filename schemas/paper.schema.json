@@ -33,7 +33,19 @@
         "required": ["name"],
         "properties": {
           "name": { "type": "string", "minLength": 1 },
-          "github": { "type": "string" }
+          "github": { "type": "string" },
+          "jianlunId": { "type": "string", "description": "贡献者的减论完整账号 ID，可省略；缺失或空字符串时展示暂无" }
+        }
+      }
+    },
+    "ancestors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "github": { "type": "string" },
+          "version": { "type": "string", "pattern": "^[a-z][a-z0-9]*[0-9]{4}(?:_[0-9]+)?$" }
         }
       }
     },
